@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat&display=swap);
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #222;
+  background-color: #1a17178c;
+}
+
+h2 {
+  margin-bottom: 0.6em;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.questions ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul.option-list {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.questions li,
+button.popup-btn,
+input {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0.6em 1.4em 0.5em 0.8em;
+  box-sizing: border-box;
+  margin: 0;
+  margin-top: 1em;
+  border: 1px solid #222;
+  border-radius: 0.5em;
+}
+
+.questions li,
+button {
+  cursor: pointer;
+  background-color: #1a17178c;
+  color: #fff;
+}
+
+li:hover, li.selected:not(correct) {
+  background-color: white;
+  color: #222;
+}
